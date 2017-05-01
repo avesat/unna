@@ -9,6 +9,7 @@ import {
   MainComponent,
   AboutComponent,
   CatalogComponent,
+  CatalogListComponent,
   PriceComponent,
   BlogComponent,
   ContactsComponent
@@ -28,6 +29,7 @@ import {AppRoutingModule} from "./app.router.module";
       MainComponent,
       AboutComponent,
       CatalogComponent,
+      CatalogListComponent,
       PriceComponent,
       BlogComponent,
       ContactsComponent
