@@ -6,7 +6,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {MdToolbarModule, MdButtonModule, MdMenuModule, MdIconModule} from '@angular/material';
 
-import {AppNavbarComponent} from "./components";
+import {AppNavbarComponent, MainComponent} from "./components";
 
 @NgModule({
     imports: [
@@ -20,10 +20,12 @@ import {AppNavbarComponent} from "./components";
       MdIconModule
     ],
     declarations: [
-      AppNavbarComponent
+      AppNavbarComponent,
+      MainComponent
     ],
     exports: [
-      AppNavbarComponent
+      AppNavbarComponent,
+      MainComponent
     ],
     providers: [ ]
 })
