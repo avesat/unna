@@ -1,0 +1,9 @@
+.right-flex {
+    flex: 1 1 auto;
+}
+
+.navigation-link {
+  padding: 0px 10px;
+  word-wrap: normal;
+  display: inline-block;
+}

@@ -1,0 +1,21 @@
+<md-toolbar md-colors="{color: 'red-A100', 'border-color': 'primary-600'}">
+    <span>Application Title</span>
+
+    <span class="right-flex"></span>
+
+    <a md-button routerLink=".">Item1</a>
+    <a md-button routerLink=".">Item2</a>
+    <a md-button routerLink=".">Item3</a>
+    <a md-button routerLink=".">Item4</a>
+    <a md-button routerLink=".">Item5</a>
+
+    <button md-icon-button [mdMenuTriggerFor]="menu">
+        <md-icon>more_vert</md-icon>
+    </button>
+    <md-menu #menu="mdMenu">
+        <button md-menu-item>
+            <md-icon>account_circle</md-icon>
+            <span>Login</span>
+        </button>
+    </md-menu>
+</md-toolbar>
