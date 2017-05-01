@@ -5,6 +5,7 @@ import {FormsModule}   from '@angular/forms';
 
 import {
   AppNavbarComponent,
+  AppFooterComponent,
   MainComponent,
   AboutComponent,
   CatalogComponent,
@@ -23,6 +24,7 @@ import {AppRoutingModule} from "./app.router.module";
     ],
     declarations: [
       AppNavbarComponent,
+      AppFooterComponent,
       MainComponent,
       AboutComponent,
       CatalogComponent,
@@ -32,6 +34,7 @@ import {AppRoutingModule} from "./app.router.module";
     ],
     exports: [
       AppNavbarComponent,
+      AppFooterComponent,
       MainComponent,
       AboutComponent,
       CatalogComponent,
