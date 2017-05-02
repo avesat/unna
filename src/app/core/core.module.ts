@@ -12,7 +12,8 @@ import {
   CatalogHeadComponent,
   CatalogListComponent,
   CatalogListItemComponent,
-  CatalogSublistComponent,
+  CatalogListStartComponent,
+  CatalogListDetailComponent,
   PriceComponent,
   BlogComponent,
   ContactsComponent
@@ -35,7 +36,8 @@ import {AppRoutingModule} from "./app.router.module";
       CatalogListComponent,
       CatalogHeadComponent,
       CatalogListItemComponent,
-      CatalogSublistComponent,
+      CatalogListStartComponent,
+      CatalogListDetailComponent,
       PriceComponent,
       BlogComponent,
       ContactsComponent

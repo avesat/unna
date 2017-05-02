@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CatalogSublistComponent } from './catalog-sublist.component';
+import { CatalogListStartComponent } from './catalog-list-start.component';
 
-describe('CatalogSublistComponent', () => {
-  let component: CatalogSublistComponent;
-  let fixture: ComponentFixture<CatalogSublistComponent>;
+describe('CatalogListStartComponent', () => {
+  let component: CatalogListStartComponent;
+  let fixture: ComponentFixture<CatalogListStartComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CatalogSublistComponent ]
+      declarations: [ CatalogListStartComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CatalogSublistComponent);
+    fixture = TestBed.createComponent(CatalogListStartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
