@@ -10,6 +10,8 @@ import {
   AboutComponent,
   CatalogComponent,
   CatalogListComponent,
+  CatalogListItemComponent,
+  CatalogSublistComponent,
   PriceComponent,
   BlogComponent,
   ContactsComponent
@@ -30,6 +32,8 @@ import {AppRoutingModule} from "./app.router.module";
       AboutComponent,
       CatalogComponent,
       CatalogListComponent,
+      CatalogListItemComponent,
+      CatalogSublistComponent,
       PriceComponent,
       BlogComponent,
       ContactsComponent
@@ -37,12 +41,6 @@ import {AppRoutingModule} from "./app.router.module";
     exports: [
       AppNavbarComponent,
       AppFooterComponent,
-      MainComponent,
-      AboutComponent,
-      CatalogComponent,
-      PriceComponent,
-      BlogComponent,
-      ContactsComponent,
       AppRoutingModule
     ],
     providers: [ ]
