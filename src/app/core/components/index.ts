@@ -4,6 +4,7 @@ export * from './app-footer/app-footer.component';
 export * from './main/main.component';
 export * from './about/about.component';
 export * from './catalog/catalog.component';
+export * from './catalog/catalog-head/catalog-head.component';
 export * from './catalog/catalog-list/catalog-list.component';
 export * from './catalog/catalog-list/catalog-list-item/catalog-list-item.component';
 export * from './catalog/catalog-sublist/catalog-sublist.component';
