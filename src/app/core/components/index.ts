@@ -8,6 +8,7 @@ export * from './catalog/catalog-head/catalog-head.component';
 export * from './catalog/catalog-list/catalog-list.component';
 export * from './catalog/catalog-list/catalog-list-item/catalog-list-item.component';
 export * from './catalog/catalog-list-detail/catalog-list-detail.component';
+export * from './catalog/catalog-list-detail/catalog-list-detail-item/catalog-list-detail-item.component';
 export * from './catalog/catalog-list-start/catalog-list-start.component';
 export * from './price/price.component';
 export * from './blog/blog.component';

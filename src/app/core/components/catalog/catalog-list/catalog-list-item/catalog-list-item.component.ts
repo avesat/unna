@@ -13,6 +13,7 @@ export class CatalogListItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

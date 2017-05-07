@@ -1,1 +1,7 @@
-<p> catalog-list-detail component </p>
+<accordion [showArrows]="true" [closeOthers]="true" [expandAll]="false">
+    <div *ngFor="let item of catalogDetails; let i = index">
+        <accordion-group [heading]="item.name" [isOpened]="i ? false : true">
+            <app-catalog-list-detail-item [detailItems]="item.catalogDetailItems"></app-catalog-list-detail-item>
+        </accordion-group>
+    </div>
+</accordion>

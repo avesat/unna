@@ -1,3 +1,7 @@
 .navbar-nav > li {
     padding-right:30px;
 }
+
+.navbar {
+    background:white;
+}
