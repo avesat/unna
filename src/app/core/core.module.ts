@@ -9,6 +9,8 @@ import {
   AppNavbarComponent,
   AppFooterComponent,
   MainComponent,
+  MainItemRightComponent,
+  MainItemLeftComponent,
   AboutComponent,
   CatalogComponent,
   CatalogHeadComponent,
@@ -19,7 +21,8 @@ import {
   CatalogListDetailItemComponent,
   PriceComponent,
   BlogComponent,
-  ContactsComponent
+  ContactsComponent,
+  ButtonImgHoverComponent
 } from "./components";
 import {CatalogService} from "./services/catalog.service";
 import {AppRoutingModule} from "./app.router.module";
@@ -36,6 +39,8 @@ import {AppRoutingModule} from "./app.router.module";
       AppNavbarComponent,
       AppFooterComponent,
       MainComponent,
+      MainItemRightComponent,
+      MainItemLeftComponent,
       AboutComponent,
       CatalogComponent,
       CatalogListComponent,
@@ -46,7 +51,8 @@ import {AppRoutingModule} from "./app.router.module";
       CatalogListDetailItemComponent,
       PriceComponent,
       BlogComponent,
-      ContactsComponent
+      ContactsComponent,
+      ButtonImgHoverComponent
     ],
     exports: [
       AppNavbarComponent,

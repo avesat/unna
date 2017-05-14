@@ -1,7 +1,34 @@
-.navbar-nav > li {
-    padding-right:30px;
+.navbar {
+    background-color:white !important;
 }
 
-.navbar {
-    background:white;
+.navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+    margin-right: 20px;
+    font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #4D4E4E;
+}
+
+@media(max-width: 900px) {
+    .navbar-nav li a {
+        margin-right: 8px;
+        font-size: 20px;
+    }
+}
+
+.navbar-brand  {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.navbar .nav .navbar-link:hover {
+    color: gray;
+}
+
+#last-link {
+    margin-right: 50px;
 }
