@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-main-item-right',
@@ -13,10 +13,15 @@ export class MainItemRightComponent implements OnInit {
   @Input() textColor: string;
   @Input() btnImgDefault : string;
   @Input() btnImgHover: string;
+  @Output() btnClick: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClick() {
+    this.btnClick.emit();
   }
 
 }

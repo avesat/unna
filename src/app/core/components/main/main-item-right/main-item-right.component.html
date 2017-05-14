@@ -18,12 +18,11 @@
                     <p class="show-text" [style.color]="textColor">Show catalog</p>
                 </div>
                 <div class="col-md-6">
-                    <a href="#">
-                        <app-button-img-hover
-                                [srcDefault]="btnImgDefault"
-                                [srcHover]="btnImgHover">
-                        </app-button-img-hover>
-                    </a>
+                    <app-button-img-hover
+                            [srcDefault]="btnImgDefault"
+                            [srcHover]="btnImgHover"
+                            (btnClick)="onClick()">
+                    </app-button-img-hover>
                 </div>
             </div>
         </div>
