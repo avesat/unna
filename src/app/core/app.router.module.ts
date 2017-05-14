@@ -23,7 +23,7 @@ const appRoutes: Routes = [
   { path: 'price', component: PriceComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'contacts', component: ContactsComponent },
-
+  { path: '**', component: MainComponent }
 ];
 
 @NgModule({
