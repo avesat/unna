@@ -1,4 +1,4 @@
-import {Component, HostListener, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-button-img-hover',
@@ -8,6 +8,7 @@ import {Component, HostListener, Input, OnInit} from '@angular/core';
 export class ButtonImgHoverComponent implements OnInit {
   @Input() srcDefault : string;
   @Input() srcHover: string;
+  @Output() btnClick: EventEmitter<any> = new EventEmitter() ;
   private currentImagePath: string;
 
   constructor() { }
@@ -24,5 +25,10 @@ export class ButtonImgHoverComponent implements OnInit {
   @HostListener('mouseout')
   onOut() {
     this.currentImagePath = this.srcDefault;
+  }
+
+  @HostListener('click')
+  onClick() {
+    this.btnClick.emit();
   }
 }
