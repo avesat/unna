@@ -123,7 +123,9 @@ export class CatalogService {
   }
 
   getCatalogDatailsByName(name: string): CatalogDetail[] {
-    return this.catalogData.find( elem => elem.name === name ).catalogDetails;
+    let catalogData = this.catalogData.find( elem => elem.name === name );
+
+    return catalogData ?  catalogData.catalogDetails : [];
   }
 
 }
