@@ -5,6 +5,8 @@ import {
   MainComponent,
   AboutComponent,
   CatalogComponent,
+  CatalogListStartComponent,
+  CatalogListDetailComponent,
   PriceComponent,
   BlogComponent,
   ContactsComponent
@@ -14,7 +16,10 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: 'main', component: MainComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'catalog', component: CatalogComponent },
+  { path: 'catalog', component: CatalogComponent, children: [
+    { path: '', component: CatalogListStartComponent },
+    { path: ':id', component: CatalogListDetailComponent }
+  ] },
   { path: 'price', component: PriceComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'contacts', component: ContactsComponent },

@@ -1,16 +1,15 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" routerLink="/main">UNNA</a>
-        </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid center-block">
 
-        <div class="collapse navbar-collapse">
+        <a class="navbar-brand" routerLink="/main"><img src="../../../../assets/img/logo/logo_green.png"/></a>
+
+        <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
-                <li><a routerLink="/about">About</a></li>
-                <li><a routerLink="/catalog">Catalog</a></li>
-                <li><a routerLink="/price">Price</a></li>
-                <li><a routerLink="/blog">Blog</a></li>
-                <li><a routerLink="/contacts">Contacts</a></li>
+                <li><a class="navbar-link" routerLink="/about">About</a></li>
+                <li><a class="navbar-link" routerLink="/catalog">Catalog</a></li>
+                <li><a class="navbar-link" routerLink="/price">Price</a></li>
+                <li><a class="navbar-link" routerLink="/blog">Blog</a></li>
+                <li id="last-link"><a class="navbar-link" routerLink="/contacts">Contacts</a></li>
             </ul>
         </div>
     </div>

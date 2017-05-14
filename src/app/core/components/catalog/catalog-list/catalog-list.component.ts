@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CatalogItem } from '../../../models/catalog-item'
+import { CatalogItem } from '../../../models/catalog-item';
+import { CatalogService } from '../../../services/catalog.service';
 
 @Component({
   selector: 'app-catalog-list',
@@ -9,29 +10,11 @@ import { CatalogItem } from '../../../models/catalog-item'
 })
 export class CatalogListComponent implements OnInit {
   private catalogItems : CatalogItem[];
-  srvCatalogItems : CatalogItem[] = [
-    {
-      name: 'catalogItem1',
-      imgPath: 'assets/img/catalog-icon.png'
-    },
-    {
-      name: 'catalogItem2',
-      imgPath: 'assets/img/catalog-icon.png'
-    },
-    {
-      name: 'catalogItem3',
-      imgPath: 'assets/img/catalog-icon.png'
-    },
-    {
-      name: 'catalogItem4',
-      imgPath: 'assets/img/catalog-icon.png'
-    }
-  ];
 
-  constructor() { }
+  constructor(private catalogSrv: CatalogService) { }
 
   ngOnInit() {
-    this.catalogItems = this.srvCatalogItems;
+    this.catalogItems = this.catalogSrv.getCatalogData();
   }
 
 }

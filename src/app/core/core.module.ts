@@ -3,19 +3,28 @@ import {BrowserModule} from '@angular/platform-browser';
 import {HttpModule} from '@angular/http';
 import {FormsModule}   from '@angular/forms';
 
+import {AccordionModule} from 'ngx-accordion'
+
 import {
   AppNavbarComponent,
   AppFooterComponent,
   MainComponent,
+  MainItemRightComponent,
+  MainItemLeftComponent,
   AboutComponent,
   CatalogComponent,
+  CatalogHeadComponent,
   CatalogListComponent,
   CatalogListItemComponent,
-  CatalogSublistComponent,
+  CatalogListStartComponent,
+  CatalogListDetailComponent,
+  CatalogListDetailItemComponent,
   PriceComponent,
   BlogComponent,
-  ContactsComponent
+  ContactsComponent,
+  ButtonImgHoverComponent
 } from "./components";
+import {CatalogService} from "./services/catalog.service";
 import {AppRoutingModule} from "./app.router.module";
 
 @NgModule({
@@ -23,27 +32,37 @@ import {AppRoutingModule} from "./app.router.module";
       BrowserModule,
       HttpModule,
       FormsModule,
+      AccordionModule,
       AppRoutingModule
     ],
     declarations: [
       AppNavbarComponent,
       AppFooterComponent,
       MainComponent,
+      MainItemRightComponent,
+      MainItemLeftComponent,
       AboutComponent,
       CatalogComponent,
       CatalogListComponent,
+      CatalogHeadComponent,
       CatalogListItemComponent,
-      CatalogSublistComponent,
+      CatalogListStartComponent,
+      CatalogListDetailComponent,
+      CatalogListDetailItemComponent,
       PriceComponent,
       BlogComponent,
-      ContactsComponent
+      ContactsComponent,
+      ButtonImgHoverComponent
     ],
     exports: [
       AppNavbarComponent,
       AppFooterComponent,
+      AccordionModule,
       AppRoutingModule
     ],
-    providers: [ ]
+    providers: [
+      CatalogService
+    ]
 })
 export class CoreModule {
 }

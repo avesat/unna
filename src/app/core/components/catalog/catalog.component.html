@@ -1,31 +1,5 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <p> CATALOG </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat vestibulum mi, nec fermentum tellus suscipit sit amet. Aliquam efficitur felis sed tempus ullamcorper. Curabitur in vulputate tortor, id tempus tellus. Sed in lorem ut erat dictum venenatis. Pellentesque non hendrerit nisl, id tempor felis.  </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <img src="assets/img/catalog-icon.png" width="64" height="64" alt="">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-4">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat vestibulum mi, nec fermentum tellus suscipit sit amet. Aliquam efficitur felis sed tempus ullamcorper. Curabitur in vulputate tortor, id tempus tellus. Sed in lorem ut erat dictum venenatis. Pellentesque non hendrerit nisl, id tempor felis.  </p>
-        </div>
-        <div class="col-md-4">
-            <button class="btn btn-default">Download Price</button>
-        </div>
-        <div class="col-md-2">
-        </div>
-    </div>
+    <app-catalog-head></app-catalog-head>
     <div class="row">
         <div class="col-md-1">
         </div>
@@ -33,7 +7,7 @@
             <app-catalog-list></app-catalog-list>
         </div>
         <div class="col-md-5">
-            <app-catalog-sublist></app-catalog-sublist>
+            <router-outlet></router-outlet>
         </div>
         <div class="col-md-1">
         </div>

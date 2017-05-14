@@ -1,0 +1,29 @@
+.container {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.img-item-logo {
+    margin-top: 10px;
+}
+
+.head-text {
+    font-size: 36px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.description-text {
+    font-size: 16px;
+    font-family: Roboto;
+    color: #9B9B9B;
+    line-height: 24px;
+}
+
+.show-text {
+    font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+    line-height: 33px;
+}

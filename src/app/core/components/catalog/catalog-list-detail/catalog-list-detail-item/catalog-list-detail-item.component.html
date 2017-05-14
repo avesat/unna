@@ -1,0 +1,16 @@
+<div *ngFor="let item of detailItems">
+    <a class="list-group-item clearfix">
+        <span class="pull-left">
+            <img [src]="item.imgPath" class="img-responsive">
+        </span>
+        <span>
+            <p class="list-group-item-text">{{item.name }}</p>
+        </span>
+        <span>
+            <p class="list-group-item-text">{{item.description }}</p>
+        </span>
+        <span>
+            <p class="list-group-item-text">{{item.price }}</p>
+        </span>
+    </a>
+</div>
